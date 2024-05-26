@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas com HTML</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="1"> <!-- Tipos de marcadores(valores): 1 A a I i-->
+        <li>Acordar</li>
+        <li>Tomar dois copos de água</li>
+        <li>Fazer a meditação</li>
+        <li>Colocar a refeição do pet</li>
+        <li>Tomar banho</li>
+        <li>Tomar desjejum</li>
+        <li>Ir para o trabalho</li>
+    </ol>
+    
+    <h2>Listas não ordenadas</h2>
+    <ul type="circle"> <!--Tipos de marcadores: disc; circle; square. Só tem esse três tipos.-->
+        <li>Comprar teclado ou piano</li>
+        <li>Emitir passaporte</li>
+        <li>Viajar para o exterior</li>
+        <li>Voar de balão no aniversário</li>
+        <li>Estudar na EBAC</li>
+    </ul>
+
+    <h2>Listas mistas(mistura lista ordenadas e não ordenadas)</h2>
+    <h3>Listas das músicas favoritas</h3>
+    <ol>
+        <li>Antigas</li> <!--lista principal-->
+        <ol type="a"> <!-- para acrescentar as sub -listas (li) à lista principal, utilizamos mais uma tag OL-->
+            <li>Chance - Luiz Claudio</li>
+            <li>Foi por amor - Rafaela Pinho</li>
+            <li>Acredito em Ti - Priscilla Gollub</li>
+            <li>Hospedando anjos sem saber - Prisma Brasil</li>
+        </ol>
+
+        <li>Atuais</li> <!-- segunda lista principal-->
+        <ol type="a" start="5"> <!-- Para que a marcação da lista abaixo continue a partir da letra "e" devemos utilizar o parâmetro start. Como ele é um parâmetro numérico, devemos colocar o número 5, que indica que a letra "e" refere-se a 5º letra do alfabeto. Caso contrário, basta colocar no Type a marcação desejada, e ela comecará pela letra "a".-->
+            <li>Acredito no Nome - Prisma Brasil</li>
+            <li>Escolho a Cristo - Prisma Brasil</li>
+            <li>Só o começo - Vocal Livre</li>
+        </ol>
+    </ol>
+    <h3>Lista dos meus jogos favoritos</h3>
+    <ol>
+        <li>Super Nintendo</li>
+        <ul type="square">
+            <li>Mario</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario Lost Level</li>
+            </ul>
+            <li>Super Mario World</li>
+            <li>Mortal Kombat</li>
+            <li>Power Rangers</li>
+        </ul>
+        <li>Play Station 1</li>
+        <ul type="square">
+            <li>Sonic</li>
+            <li>Driver</li>
+            <li>Spider-Man</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de definições</h2> 
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação utilizada para criar conteúdo de site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de estilo utilizada no design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação utilizada para criação de interatividade de um site.</dd>
+    </dl>                                                
+</body>
+</html>

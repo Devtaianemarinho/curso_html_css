@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links em html</title>
+</head>
+<body>
+    <h1>Usando links externos</h1> <!--link externo é aquele que nos leva para outro site, nesse caso devemos indicar a URL completa, incluindo https://-->
+    <p>Você pode acessar uma apresentação <a href="https://prezi.com/p/4r53zx726ldm/?present=1" target="_blank" rel="external">preparada no Prezi sobre o Universo</a></p> <!--o parâmetro target controla onde o site de destino vai abrir, se na mesma janela ou numa nova janela(aba)-->
+    <p>Você pode acessar também as orientações para confecção do <a href="https://www.canva.com/design/DAFXr2tGv1A/NCBWGd7h6DQd7wHVLu3jsQ/edit?utm_content=DAFXr2tGv1A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="external">tabuleiro gigante do Sistema Solar</a></p>
+    
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do meu site. Se você quiser pode, acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página.</a></p> <!-- o valor "next" indica avançar para próxima página-->
+
+    <p>Você também pode acessar a <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a> (terceira página)</p>
+
+    <h1>Usando links para download</h1>
+    <ul type="square">
+        <li><a href="Aula de Ciências/Eletrizante I 8° ANO.pdf" download="Eletrizante I 8° ANO.pdf" type="application/pdf">Baixe aqui o PDF da minha aula sobre eletrização</a></li>
+        <li><a href="Aula de Ciências/Eletrizante I 8° ANO.zip" download="Eletrizante I 8° ANO.zip" type="application/zip">Baixe aqui o PDF compactado em zip da aula sobre eletrização</a></li>
+        <li><a href="Aula de Ciências/A CIÊNCIA NA NATUREZA.pptx" download="A CIÊNCIA NA NATUREZA.pptx" type="application/vnd.ms-powerpoint">Baixe a apresentação em PowerPoint sobre ciência na natureza</a></li>
+    </ul>
+</body>
+</html>

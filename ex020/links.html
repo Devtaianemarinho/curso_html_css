@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    
+    <style>
+        /* 
+        Nas CSS utiliza-se os seguintes símbolos para SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseudo-classe
+        :: = pseudo-elemento
+        > = Children (filho da div)
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color:red;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        /* O seletor a acima foi utilizado para configurações gerais dos links: letra na cor vermelha; font-weight: bold(negrito); e não sublinhado (text-decoration: none)*/
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active{
+            color: yellow;
+        }
+/* O link que foi visitado (pseudo-classe - :visited) ficará com a letra da cor "darkred"; Com a pseudo-classe :hover - quando o mouse for passado em cima dos links eles aparecerão sublinhados e na cor preta; Com a pseudo-classe :active- quando o link for clicado ele ficará na cor amarela.*/
+.especial{
+    background-color: rgba(207, 153, 153, 0.658);
+    color:red:
+}
+.especial::before{
+    content:  '⇐';
+}
+.especial::after{
+    content: '⇒';
+   
+}
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://prezi.com/view/EYmQPhvG9QzuOrKgtoWG/" target="_blank" rel="external" class="especial">Prezi</a></li>
+        <li><a href="https://www.canva.com/design/DAF_e5E8CKs/NB9jYG5-Jfop27DcXVwCaQ/edit" target="_blank" rel="external" class="especial">Canva</a></li>
+    </ul>
+    
+</body>
+</html>

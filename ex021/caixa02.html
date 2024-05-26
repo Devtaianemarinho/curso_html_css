@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+       #principal{
+        text-align: center;
+        font: normal lighter 3em 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: #F01D26;
+        color:#F5F0F0;
+        border: 30px solid #F2BB0C;
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.356);
+       }
+       main{
+        background-color: white;
+        border-radius: 20px 0px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.274);
+       }
+      
+       #menu {
+        background-color: #F2BB0C;
+        color: green;
+        display: inline;
+        font-size: 2em;
+       } 
+       a {
+        text-decoration: none;
+        color: #F2961D;
+        font-size:1.5em ;
+
+       }
+       a:hover {
+        text-decoration: underline;
+        color: black;
+       }
+
+      h2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: green;
+        border: 20px;
+        color: white;
+        margin: 20px auto 30px auto;
+        text-align: center;
+        height: 50px;
+        width: 200px;
+      }
+      .destaques{
+        text-align: center;
+        font-size: 1em;
+      }
+      footer{
+        background-color: black;
+        color: white;
+        margin: 0px;
+        padding: 4px;
+        text-align: center;
+      }
+      footer > p {
+        margin: 0px;
+      }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="principal">Tai Hamburgueria</h1>
+       <img src="imagens/hamburgerrecortado.png" alt="imagem do conteúdo principal">
+        
+<ul type="none">
+    <h2 id="menu">Cardápio</h2>
+    <li><a href="pagina02.html" target="_self" rel="next">Burgers</a></li>
+    <li><a href="pagina03.html" target="_self" rel="next">Bebidas</a></li>
+</ul>
+    </header>
+    
+    <main>
+        <section>
+            <h2>ABERTO AGORA</h2>
+            <article>
+                <h3 class="destaques">Entrega: 40 - 60 min</h3>
+                <h3 class="destaques">Entrega grátis a partir de R$ 20,00</h3>
+
+                <aside>
+                    <h4 class="destaques">Estamos localizados</h4>
+                    <address class="destaques">Rua João Alves de Oliveira, n° 125, Parque Bom Retiro, Paulínia-SP</address>
+                </aside>
+
+            </article>
+            <article>
+                <h4>Faça seu pedido</h4>
+                <p>Delivery: (19) 98285-7539</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Taiane Marinho</p>
+    </footer>
+
+</body>
+</html>

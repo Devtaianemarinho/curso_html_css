@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Adaptação de imagens para um site</h1>
+    <hr>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador. </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="A imagem flexível funciona">
+    </picture>
+
+    <h1>Mais adaptações de imagens para um site</h1>
+    <hr>
+    <picture>
+       <source media="(max-width:750px)" srcset="imagens/praia-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/praia-m.png" type="image/png">
+        <img src="imagens/praia-g.png" alt="Imagens flexíveis">
+    </picture>
+    
+    <h1>Reproduzindo áudio</h1>
+    <hr>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <audio preload="metadata" controls autoplay>
+        <source src="midia/La Docerola - Quincas Moreira.mp3" type="audio/mpeg">
+        <source src="midia/La Docerola - Quincas Moreira.ogg" type="audio/ogg">
+        <source src="midia/La Docerola - Quincas Moreira.wav" type="audio/wav">
+        <p><a href="midia/La Docerola - Quincas Moreira.mp3" download="La Docerola - Quincas Moreira.mp3" type="audio/mpeg">Infelizmente seu navegador não consegue reproduzir o áudio</a> Clique aqui para baixar o arquivo</p>
+    </audio>
+<!-- Formatos de áudio MP3 WAV (mais pesado, não é recomendado usá-lo) e OGG. Coloque na parte de cima o formato de áudio favorito e os demais embaixo, caso o de cima falhe. Caso nenhum dê certo aparecer a mensagem para fazer download.-->
+</body>
+</html>
