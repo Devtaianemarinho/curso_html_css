@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url('imagens/pexels-maxfrancis-2246476.jpg') ;
+}
+div.quadrado{
+    display: inline-block;
+    border: 2px groove black;
+    border-radius: 15px;
+    background-color: lightgray;
+    width: 300px;
+    height: 300px;
+}
+
+div#q1{
+    background-image: linear-gradient(to right, orange, yellow);
+}
+
+div#q2{
+    background-image: url('imagens/ceunoturno300.jpg');
+}
+
+div#q3{
+    background-image: url('imagens/spemone700.jpg');
+}
